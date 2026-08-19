@@ -1,0 +1,131 @@
+=== Genomic Mutation Tracker ===
+
+Loaded 100 patients
+
+================================
+     ALGORITHM PERFORMANCE      
+================================
+KMP time       : 15.1688 ms
+Rabin-Karp time: 22.2215 ms
+Faster by      : 1.46494x
+Winner         : KMP
+================================
+
+
+================================
+   TOP 5 MOST COMMON MUTATIONS  
+================================
+1. GGT -> 1602 occurrences across all patients
+2. CGGA -> 409 occurrences across all patients
+3. TAGG -> 404 occurrences across all patients
+4. ATCGG -> 132 occurrences across all patients
+5. TTTCGA -> 51 occurrences across all patients
+
+Results - First 5 patients:
+==================================
+ID                   : P001
+Age                  : 43
+Total mutations      : 19
+Unique mutation types: 4
+Mutation density     : 19 per 1000 chars
+Risk Score           : 19.2
+
+KMP Results:
+  ATCGG found at: 946 
+  CGGA found at: 12 960 
+  GGT found at: 29 76 162 293 623 642 713 738 741 746 749 770 
+  TAGG found at: 20 533 711 966 
+
+Rabin-Karp Results:
+  ATCGG found at: 946 
+  CGGA found at: 12 960 
+  GGT found at: 29 76 162 293 623 642 713 738 741 746 749 770 
+  TAGG found at: 20 533 711 966 
+
+Both algorithms match: YES
+==================================
+ID                   : P002
+Age                  : 23
+Total mutations      : 26
+Unique mutation types: 3
+Mutation density     : 26 per 1000 chars
+Risk Score           : 23.8
+
+KMP Results:
+  CGGA found at: 305 309 355 646 882 
+  GGT found at: 181 204 208 221 284 296 344 374 431 487 556 591 627 664 703 740 898 972 
+  TAGG found at: 77 817 919 
+
+Rabin-Karp Results:
+  CGGA found at: 305 309 355 646 882 
+  GGT found at: 181 204 208 221 284 296 344 374 431 487 556 591 627 664 703 740 898 972 
+  TAGG found at: 77 817 919 
+
+Both algorithms match: YES
+==================================
+ID                   : P003
+Age                  : 56
+Total mutations      : 28
+Unique mutation types: 5
+Mutation density     : 28 per 1000 chars
+Risk Score           : 27.4
+
+KMP Results:
+  ATCGG found at: 838 
+  CGGA found at: 181 840 844 884 908 912 
+  GGT found at: 75 86 168 297 343 419 425 431 498 623 693 743 805 857 867 923 
+  TAGG found at: 73 136 141 691 
+  TTTCGA found at: 307 
+
+Rabin-Karp Results:
+  ATCGG found at: 838 
+  CGGA found at: 181 840 844 884 908 912 
+  GGT found at: 75 86 168 297 343 419 425 431 498 623 693 743 805 857 867 923 
+  TAGG found at: 73 136 141 691 
+  TTTCGA found at: 307 
+
+Both algorithms match: YES
+==================================
+ID                   : P004
+Age                  : 26
+Total mutations      : 31
+Unique mutation types: 4
+Mutation density     : 31 per 1000 chars
+Risk Score           : 28.8
+
+KMP Results:
+  ATCGG found at: 515 
+  CGGA found at: 114 182 579 724 734 892 915 
+  GGT found at: 2 99 109 142 269 312 347 423 457 527 540 669 716 740 787 814 900 946 
+  TAGG found at: 96 104 298 310 318 
+
+Rabin-Karp Results:
+  ATCGG found at: 515 
+  CGGA found at: 114 182 579 724 734 892 915 
+  GGT found at: 2 99 109 142 269 312 347 423 457 527 540 669 716 740 787 814 900 946 
+  TAGG found at: 96 104 298 310 318 
+
+Both algorithms match: YES
+==================================
+ID                   : P005
+Age                  : 28
+Total mutations      : 30
+Unique mutation types: 4
+Mutation density     : 30 per 1000 chars
+Risk Score           : 28
+
+KMP Results:
+  ATCGG found at: 396 855 
+  CGGA found at: 233 243 838 902 
+  GGT found at: 115 118 155 237 306 371 425 515 580 598 601 639 645 651 678 721 808 845 863 867 
+  TAGG found at: 52 843 865 947 
+
+Rabin-Karp Results:
+  ATCGG found at: 396 855 
+  CGGA found at: 233 243 838 902 
+  GGT found at: 115 118 155 237 306 371 425 515 580 598 601 639 645 651 678 721 808 845 863 867 
+  TAGG found at: 52 843 865 947 
+
+Both algorithms match: YES
+results.csv written
+mutation_results.csv written
